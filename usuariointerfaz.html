@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link rel="stylesheet" href="css/estilos_padmin.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/ca7c7e6854.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="Encabezado">
+        <img src="imagenes/logobien.jpg" alt="ZooAragon" >
+        <h1> ZooAragon App</h1>
+        <h2>Perfil Usuario</h2>
+        <div class="clearfix"></div>
+        <nav>
+            <a href="Index.html">Inicio</a>
+            <a href="mapaZooAragon.html">Mapa Interactivo</a>
+            <a href="#animales">Animales</a>
+            <a href="#zonas">Zonas</a>
+            <a href="#actividades">Actividades</a>
+            <a href="#precios">Precio</a>
+            <a href="#eventos">Eventos</a>
+            <a href="inicio.html">Cerrar Sesion</a>
+        </nav>
+    </header>
+
+<section id="animales">
+    <h2>Nuestros Animales</h2>
+    <p>Descubre una gran variedad de especies</p>
+    <div class="grid-animales">
+        <div class="animal">
+            <img src="imagenes/animal1.jpg" alt="León">
+            <div class="overlay">Jabalí</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/animal2.jpg" alt="Elefante">
+            <div class="overlay">Venado</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/animal3.jpg" alt="Jirafa">
+            <div class="overlay">Flaminco</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/animal4.jpg" alt="Tigre">
+            <div class="overlay">Pavo real</div>
+        </div>
+    </div>
+    <div class="grid-animales">
+        <div class="animal">
+            <img src="imagenes/animal5.jpg" alt="León">
+            <div class="overlay">Loro</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/animal6.jpg" alt="Elefante">
+            <div class="overlay">Elefante</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/animal7.jpg" alt="Jirafa">
+            <div class="overlay">Lobo de mar</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/animal8.jpg" alt="Tigre">
+            <div class="overlay">Tigre</div>
+        </div>
+    </div>
+    <div class="grid-animales">
+        <div class="animal">
+            <img src="imagenes/animal9.jpg" alt="León">
+            <div class="overlay">Jirafa</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/animal10.jpg" alt="Elefante">
+            <div class="overlay">Hipopotamo</div>
+        </div>
+    </div>
+</section>
+
+
+<section id="zonas">
+    <h2>Zonas del Zoológico</h2>
+    <p>Explora nuestras diferentes áreas temáticas.</p>
+    <div class="grid-animales">
+        <div class="animal">
+            <img src="imagenes/mexicana.jpg" alt="Zona Mexicana">
+            <div class="overlay">Zona Mexicana</div>
+            <div class="info-box">Descubre la fauna endémica de México en esta zona.</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/americana.jpg" alt="Zona Americana">
+            <div class="overlay">Zona Americana</div>
+            <div class="info-box">Explora la diversidad de especies del continente americano.</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/africana.jpg" alt="Zona Africana">
+            <div class="overlay">Zona Africana</div>
+            <div class="info-box">Admira la vida salvaje africana con leones, jirafas y más.</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/antiguo.jpg" alt="Zoológico Antiguo">
+            <div class="overlay">Zoológico Antiguo</div>
+            <div class="info-box">Visita la zona más emblemática del zoológico con historia y tradición.</div>
+        </div>
+    </div>
+</section>
+
+
+<section id="actividades">
+    <h2>Actividades</h2>
+    <p>Vive experiencias increíbles con nuestros programas.</p>
+    <div class="grid-animales">
+        <div class="animal">
+            <img src="imagenes/aviario.jpg" alt="León">
+            <div class="overlay">Aviario</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/demoaves.jpg" alt="Elefante">
+            <div class="overlay">Demostración de aves</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/herpetario.jpg" alt="Jirafa">
+            <div class="overlay">Herpetario</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/jardinplantas.jpg" alt="Tigre">
+            <div class="overlay">Jardín de plantas</div>
+        </div>
+        <div class="animal">
+            <img src="imagenes/tren.jpg" alt="Tigre">
+            <div class="overlay">Recorrido en trenS</div>
+        </div>
+    </div>
+</section>
+
+<section id="precios">
+    <h2>Precios y Paquetes</h2>
+    <p>Consulta nuestras tarifas y promociones.</p>
+</section>
+
+<section id="eventos">
+<div class="carousel-container">
+    <h2>Eventos</h2>
+    <p>Consulta nuestros diferentes eventos especiales</p>
+    <button class="carousel-btn left" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="carousel-track">
+        <div class="carousel-item"><img src="imagenes/herpetario.jpg" alt="Imagen 1"></div>
+        <div class="carousel-item"><img src="imagenes/platicas.jpg" alt="Imagen 2"></div>
+        <div class="carousel-item"><img src="imagenes/tren.jpg" alt="Imagen 3"></div>
+        <div class="carousel-item"><img src="imagenes/areacomida.jpg" alt="Imagen 4"></div>
+        <div class="carousel-item"><img src="imagenes/aviario.jpg" alt="Imagen 5"></div>
+        <div class="carousel-item"><img src="imagenes/areadejuegos.jpg" alt="Imagen 5"></div>
+        <div class="carousel-item"><img src="imagenes/zoovenires.jpg" alt="Imagen 5"></div>
+        <div class="carousel-item"><img src="imagenes/zoo.jpg" alt="Imagen 5"></div>
+        <div class="carousel-item"><img src="imagenes/jardinplantas.jpg" alt="Imagen 5"></div>
+    </div>
+    <button class="carousel-btn right" onclick="moveSlide(1)">&#10095;</button>
+</div>
+</section>
+
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Ubicación: Av. José Loreto Fabela S/N, Zoológico de San Juan de Aragón, Gustavo A. Madero, 07920 Ciudad de México, CDMX</p>
+    <p>Tel. 5751-9725</p>
+</section>
+<footer class="footer">
+    <table>
+        <tr>
+            <td>
+                ©CrossGen Coders <br>
+                ZooAragon App <br>
+                <i class="fa-solid fa-location-dot"></i> Av. José Loreto Fabela S/N, Zoológico de San Juan de Aragón, 
+                Gustavo A. Madero, 07920 Ciudad de México, CDMX  <br>
+                <i class="fa-solid fa-phone"></i>Contacto 5557312412 <br>
+            </td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>

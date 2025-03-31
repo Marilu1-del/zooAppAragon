@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+section {
+    padding: 40px;
+    text-align: center;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.grid-animales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Esto asegura que las imágenes no se desborden */
+}
+
+.animal {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.animal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.animal:hover img {
+    filter: brightness(50%);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.animal:hover .overlay {
+    opacity: 1;
+}
+
+/* Carousel Section */
+.carousel img {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+}
+
+.carousel .carousel-container {
+    position: relative; /* Necesario para las flechas dentro del contenedor */
+    overflow: hidden;
+}
+
+.carousel button {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente */
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Borde visible */
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    z-index: 2; /* Asegura que las flechas estén por encima de la imagen */
+}
+
+.carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo ligeramente más oscuro al pasar el ratón */
+    border-color: white; /* Borde blanco al pasar el ratón */
+}
+
+.carousel button.left {
+    left: 16px; /* Posiciona la flecha izquierda */
+}
+
+.carousel button.right {
+    right: 16px; /* Posiciona la flecha derecha */
+}
+
+.carousel-indicators button {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.carousel-indicators button.active {
+    background-color: #065f46;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 300px;
+    margin: 10px;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.carousel-btn.left {
+    left: 10px;
+}
+.carousel-btn.right {
+    right: 10px;
+}
+
+nav {
+    background: linear-gradient(90deg, #00796b, #004d40);
+    color: white;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+nav h1 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.1rem;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+}
+
+
+
+
+
+/* Hero Section */
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+    background: url('imagenes/intro.jpeg') no-repeat center center/cover;
+}
+
+header .content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+header h2 {
+    font-size: 2.5rem;
+}
+
+header a {
+    color: #374151;
+    padding: 0.50rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    background-color: #fbc02d;
+}
